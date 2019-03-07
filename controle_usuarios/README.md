@@ -1,3 +1,3 @@
-## PHP do Zero ao Profissional
+## Projeto Controle de Usuários
 
-# Projetos práticos do Módulo PHP Intermédiario
+PHP, PDO, MySQL e Materialize
