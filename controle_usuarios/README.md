@@ -2,4 +2,4 @@
 
 PHP, PDO, MySQL e Materialize
 
-!(/screenshots/tela1.png).
+!(screenshots/tela1.png).
