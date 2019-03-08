@@ -1,9 +1,9 @@
 <?php require 'header.php'; ?>
-<?php require 'config.php' ?>
+<?php require '../app/config.php' ?>
 
 <div class="container">
     <h2>Controle de Usuários</h2>
-    <a class="waves-effect waves-light btn" href="add.php">Adicionar novo Usuário</a>
+    <a class="waves-effect waves-light btn" href="../app/add.php">Adicionar novo Usuário</a>
     <table>
         <tr>
             <th>Nome</th>
@@ -11,7 +11,7 @@
             <th>Ações</th>
         </tr>
 
-        <?php require 'get.php';?>
+        <?php require '../app/get.php';?>
 
     </table>
 </div>

@@ -20,6 +20,6 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
         $data = $sql->fetch();
         $_SESSION['id'] = $data['id'];
         // Redirecionando o usuário
-        header("Location: index.php");
+        header("Location: ../public/index.php");
     }
 }

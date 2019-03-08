@@ -4,7 +4,7 @@
  * incluido os arquivos de conexão ao database e verficação de login
  */
 session_start();
-include 'header.php';
+include '../public/header.php';
 include 'config.php';
 include 'verify.php';
 ?>
@@ -42,4 +42,4 @@ include 'verify.php';
     </div>    
 </center> <!-- End Form User Login -->
 
-<?php include 'footer.php'; ?>
+<?php include '../public/footer.php'; ?>

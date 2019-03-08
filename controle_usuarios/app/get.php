@@ -10,10 +10,10 @@ if ($sql->rowCount() > 0) {
             echo '<td>'.$usuario['name'].'</td>';
             echo '<td>'.$usuario['email'].'</td>';
             echo '<td>
-                <a href="edit.php?id='.$usuario['id'].'">
+                <a href="../app/edit.php?id='.$usuario['id'].'">
                     <i class="material-icons">edit</i>
                 </a>
-                <a href="delete.php?id='.$usuario['id'].'">
+                <a href="../app/delete.php?id='.$usuario['id'].'">
                     <i class="material-icons">delete</i>
                 </a>
                 </td>';

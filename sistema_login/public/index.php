@@ -9,12 +9,12 @@ include 'header.php';
 if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
     // echo "<p>Usuário Logado...</p>";
 } else {
-    header("Location: login.php");
+    header("Location: ../app/login.php");
 }
 ?>
 
 <!-- restricted access content -->
-<a href="exit.php"><i class="material-icons">exit</i>Sair</a>
+<a href="../app/exit.php"><i class="material-icons">exit</i>Sair</a>
 
 <div class="container">
     <div class="row">

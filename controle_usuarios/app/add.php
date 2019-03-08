@@ -1,4 +1,4 @@
-<?php require 'header.php' ?>
+<?php require '../public/header.php' ?>
 
 <?php 
 require 'config.php';
@@ -11,7 +11,7 @@ if (isset($_POST['name']) && !empty($_POST['name'])) {
     $sql = "INSERT INTO usuarios SET name = '$name', email = '$email', password = '$password'";
     $pdo->query($sql);
 
-    header("Location: index.php");
+    header("Location: ../public/index.php");
 }
  ?>
 
@@ -19,7 +19,7 @@ if (isset($_POST['name']) && !empty($_POST['name'])) {
 <!-- New User Form -->
 <div class="container">
     <h2>Novo Usuário</h2>
-    <a href="index.php">Voltar para página anterior</a>
+    <a href="../public/index.php">Voltar para página anterior</a>
     <div class="row">
         <form class="col s12" method="POST">
             <div class="row">
@@ -46,4 +46,4 @@ if (isset($_POST['name']) && !empty($_POST['name'])) {
     </div>
 </div>
 
-<?php require 'footer.php' ?>
+<?php require '../public/footer.php' ?>

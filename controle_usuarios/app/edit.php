@@ -1,5 +1,5 @@
 <?php 
-require 'header.php';
+require '../public/header.php';
 require 'update.php'; 
 ?>
 
@@ -7,7 +7,7 @@ require 'update.php';
 <!-- Edit User Form -->
 <div class="container">
     <h2>Editar Usuário</h2>
-    <a href="index.php">Voltar para página anterior</a>
+    <a href="../public/index.php">Voltar para página anterior</a>
     <div class="row">
 
         <form class="col s12" method="POST">
@@ -31,4 +31,4 @@ require 'update.php';
     </div>
 </div>
 
-<?php require 'footer.php' ?>
+<?php require '../public/footer.php' ?>
