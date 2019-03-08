@@ -1,4 +1,7 @@
 <?php 
+/**
+ * Arquivo de conexão ao database usando a biblioteca PDO
+ */
 $dsn = 'mysql:dbname=blog;host=localhost';
 $dbuser = 'root';
 $dbpass = '';
