@@ -7,7 +7,7 @@ $dbuser = 'root';
 $dbpass = '';
 
 try {
-    $db = new PDO($dsn, $dbuser, $dbpass);
+    $pdo = new PDO($dsn, $dbuser, $dbpass);
 } catch (PDOException $e) {
     echo "Erro".$e->getMessage();
 }

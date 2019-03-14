@@ -13,8 +13,11 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
     $password = md5(addslashes($_POST['password']));
 
     // Consulta ao database
-    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
-    $sql = $db->query($sql);
+    $sql = "SELECT * FROM users WHERE email = :email AND password = :password";
+    $sql = $pdo->prepare($sql);
+    $sql->bindValue(':email', $email);
+    $sql->bindValue(':password', $password);
+    $sql->execute();
     // Se houver dados retornados da consulta é armazenado o id na sessão;
     if ($sql->rowCount() > 0) {
         $data = $sql->fetch();

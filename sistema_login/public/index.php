@@ -14,7 +14,7 @@ if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
 ?>
 
 <!-- restricted access content -->
-<a href="../app/exit.php"><i class="material-icons">exit</i>Sair</a>
+<a href="../app/exit.php" class="waves-effect waves-light btn blue lighten-1"><i class="material-icons right">exit_to_app</i>Sair</a>
 
 <div class="container">
     <h4>Welcome Here...</h4>
