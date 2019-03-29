@@ -1,3 +1,3 @@
 Mini-sistema de comentários
 
-![](screenshot.png)
+![](public/img/screenshot.png)
