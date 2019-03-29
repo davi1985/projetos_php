@@ -1,24 +1,7 @@
 <?php 
-try {
-    $pdo = new PDO("mysql:dbname=projeto_comentarios;host=localhost","root", "");
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->exec("SET CHARACTER SET utf8");
-} catch (PDOExection $e ) {
-    echo 'Erro'.$e->getMessage();
-    exit;
-}
+require '../app/config.php';
+require '../app/messages.php';
 
-if (isset($_POST['name']) && !empty($_POST['name'])) {
-    $name = $_POST['name'];
-    $message = $_POST['body_msg'];
-
-    $sql = "INSERT INTO messages SET author = :name, body_msg = :message, date_msg = NOW()";
-    $sql = $pdo->prepare($sql);
-    $sql->bindValue(':name', $name);
-    $sql->bindValue(':message', $message);
-    $sql->execute();
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +22,7 @@ if (isset($_POST['name']) && !empty($_POST['name'])) {
     <div class="container">
         <div class="row">
             <h4>Deixe sua mensagem...</h4>
-            <form method="POST">
+            <form method="POST" action="../app/messages.php">
                 <div class="input-field col s12">
                     <input type="text" id="name" name="name">
                     <label for="name">Nome</label>   
