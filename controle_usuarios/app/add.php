@@ -8,7 +8,10 @@ if (isset($_POST['name']) && !empty($_POST['name'])) {
     $email = addslashes($_POST['email']);
     $password = md5(addslashes($_POST['password']));
 
-    $sql = "INSERT INTO usuarios SET name = '$name', email = '$email', password = '$password'";
+    $sql = "INSERT INTO usuarios SET 
+        name = '$name',
+        email = '$email',
+        password = '$password'";
 
     $sql = $pdo->query($sql);
     header("Location: ../public/index.php");
