@@ -7,7 +7,7 @@
 // Incluindo conexão ao database;
 include 'config.php';
 
-// Verificando se o email foi setado e não estã vazio;
+// Verificando se o email foi setado e não está vazio;
 if (isset($_POST['email']) && !empty($_POST['email'])) {
     $email = addslashes($_POST['email']);
     $password = md5(addslashes($_POST['password']));
