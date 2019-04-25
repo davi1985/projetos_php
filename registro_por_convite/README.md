@@ -1,6 +1,6 @@
 ## Mini-sistema de Registros por convite
 
-# PHP7, MySQL, Materialize
+PHP7, MySQL, Materialize
 
 Screenshots
 ![](public/screenshots/login.png)
