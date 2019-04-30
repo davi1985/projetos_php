@@ -2,4 +2,4 @@
 
 ### PHP and Materialize
 
-![](img.png)
+![](calculator.png)

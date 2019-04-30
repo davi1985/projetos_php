@@ -35,6 +35,7 @@ require('calculate.php');
       <input type="submit" value="Resultado" class="btn">
   </form>
 
+  
     <div class="container">
       <div class="card">
         <h3>
