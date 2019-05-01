@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 50px;
+  color: #222;
+}
+.card {
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-color: lightseagreen
+
+}
+form {
+  padding: 5px;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+span {
+  font-family: 'Architects Daughter';
+  font-size: 40px;
+}
+input {
+  padding: 15px;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+  font-size: 20px;
+}
+.btn {
+  padding: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
