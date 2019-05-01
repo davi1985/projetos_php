@@ -4,7 +4,7 @@ function isHuman()
 {
     if (isset($_POST['inputValue']) && !empty($_POST['inputValue'])) {
         $inputValue = intval($_POST['inputValue']);
-        $result = 'You is HUMAN!';
+        $result = 'You are HUMAN!';
         // $return = header('Location: index.php');
         if ($inputValue === $_SESSION['secretNumber']) {
             return $result;
