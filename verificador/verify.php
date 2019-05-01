@@ -21,9 +21,9 @@ require('header.php');
             echo (isHuman() === false) ? header('Location: index.php') : isHuman();
         ?>
     </h1>
-    <img src="happy.png" alt="happy" width="32" />
-    <img src="happy.png" alt="happy" width="32" />
-    <img src="happy.png" alt="happy" width="32" />
+    <img src="img/happy.png" alt="happy" width="32" />
+    <img src="img/happy.png" alt="happy" width="32" />
+    <img src="img/happy.png" alt="happy" width="32" />
 
 </div>
 <?php require('footer.php');
