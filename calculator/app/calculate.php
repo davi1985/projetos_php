@@ -1,22 +1,23 @@
 <?php
 
+/**
+ * @return string
+ */
 function calculate()
 {
     if (!empty($_GET['numberOne']) && !empty($_GET['numberTwo']) && !empty($_GET['operation'])) {
         $numberOne = floatval($_GET['numberOne']);
         $operation = $_GET['operation'];
         $numberTwo = floatval($_GET['numberTwo']);
-        $result;
+        $result = '';
         $err = 'ERRO';
         switch ($operation) {
           case '+':
             $result = $numberOne + $numberTwo;
             break;
-          
           case '-':
             $result = $numberOne - $numberTwo;
             break;
-
           case '*':
             $result = $numberOne * $numberTwo;
             break;
