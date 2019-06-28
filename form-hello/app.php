@@ -2,8 +2,8 @@
     function hadName() 
     {
         if (isset($_POST['name']) && !empty($_POST['name'])) {
-            $name = addslashes($_POST['name']);
-        return $name;
+            $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+            return $name;
         }
     }   
 ?>
